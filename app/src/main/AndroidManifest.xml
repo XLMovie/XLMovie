@@ -3,7 +3,7 @@
     package="com.bw.movie">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".app.XLApp"
@@ -13,13 +13,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.activity.MainActivity">
+        <activity android:name=".view.activity.StartBootActivity" android:theme="@style/StartTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.activity.LoginActivity" />
+        <activity android:name=".view.activity.BootPageActivity">
+
+        </activity>
+        <activity android:name=".view.activity.MainActivity" />
     </application>
 
 </manifest>
