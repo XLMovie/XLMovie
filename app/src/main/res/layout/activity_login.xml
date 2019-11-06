@@ -8,13 +8,22 @@
     android:orientation="vertical"
     tools:context=".view.activity.LoginActivity">
 
+    <ImageView
+        android:id="@+id/login_img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="27dp"
+        android:src="@mipmap/back" />
+
     <EditText
         android:id="@+id/login_edit_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="327dp"
+        android:layout_marginTop="256dp"
         android:layout_marginRight="25dp"
+        android:textColor="@android:color/white"
         android:background="@drawable/login_btn_shap"
         android:hint="请输入邮箱账户"
         android:paddingLeft="20dp"
@@ -34,6 +43,7 @@
         <EditText
             android:id="@+id/login_edit_pwd"
             android:layout_width="match_parent"
+            android:textColor="@android:color/white"
             android:layout_height="wrap_content"
             android:background="@drawable/login_btn_shap"
             android:hint="请输入密码"
@@ -60,6 +70,7 @@
         android:layout_marginRight="25dp">
 
         <TextView
+            android:id="@+id/login_zhu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -81,19 +92,46 @@
         android:textSize="15dp"
         android:textStyle="bold" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="73dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="95dp"
+            android:layout_height="3dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="或"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="95dp"
+            android:layout_height="3dp"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_wei"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="25dp">
-
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/white" />
-
-    </RelativeLayout>
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/login_btn_wei_shap"
+        android:src="@drawable/weixin" />
 
 
 </LinearLayout>

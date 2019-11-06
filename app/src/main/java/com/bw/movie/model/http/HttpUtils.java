@@ -64,7 +64,7 @@ public class HttpUtils {
 
         Retrofit build1 = new Retrofit.Builder()
                 .client(build)
-                .baseUrl("")
+                .baseUrl("http://172.17.8.100/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
